@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="webslides.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <!-- <div class="nav-header">
+            <div class="nav-title">
+                <a id="home" href="#slide=1">Home</a>
+            </div>
+        </div> -->
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="#slide=1">Aim</a>
+            <a href="#slide=3">Theory</a>
+            <a href="#slide=2">Pretest</a>
+            <a href="#slide=5">Procedure</a>
+            <a href="./newpage.html">Simulator</a>
+            <a href="#slide=7">Posttest</a>
+            <a href="#slide=8">Reference</a>
+
+
+        </div>
+    </div>
+
+    <main role="main">
+        <article id="webslides" class="horizontal">
+            <section id="section-71" class="slide current" style="background-color: white;" usedbyfluent="true">
+
+                <div class="wrap aligncentertitleaim" usedbyfluent="true" style="margin-top: 0%; vertical-align: top;">
+                    <h3 style="color: rgb(67, 141, 211); font-weight: bold; font-size: 2; font-family: 'Raleway', sans-serif;"
+                        usedbyfluent="true">Detection of Sa0 and Sa1 Faults on Basic Logic Gates : AND  , OR , NOT</h3>
+                </div>
+                <hr style="height: 4px; position: relative; top: -210px;">
+                
+                <div  class="wrap aligncentertitleaim" usedbyfluent="true" style="margin-top: 0%; align-content: center; vertical-align: top;">
+                    <h5 style="color: black; " class="aimpoints">To understand the stuck at fault model in a digital circuits like AND, OR,
+                        NOT gates</h5>
+                    <h5 style="color: black; " class="aimpoints">To analyse the Sa0 and Sa1 faults in AND, OR, NOT gates</h5>
+                    <h5 style="color: black; " class="aimpoints">To detect the all the possible Sa1 and Sa0 faults in AND, OR, NOT gates
+                    </h5>
+
+
+                </div>
+            </section>
+            <section>
+                <form name="quiz" id="quiz">
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">Which of the following is true for AND gate? </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q11" class="padded-o-div "><input type="radio" name="question1" value="q11"> A. The AND gate gives us a
+                            HIGH output if and
+                            only if both the inputs to the AND gate are HIGH.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q12" class="padded-o-div"><input type="radio" name="question1" value="q12"> B. The AND gate gives us a
+                            HIGH output if any
+                            of the input to the AND gate is HIGH.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q13" class="padded-o-div"><input type="radio" name="question1" value="q13"> C. The AND gate gives us a
+                            HIGH output if and
+                            only if both the inputs to the AND gate are LOW.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q14" class="padded-o-div"><input type="radio" name="question1" value="q14"> D. The AND gate gives us a
+                            HIGH output one
+                            input is HIGH and other is LOW.</p>
+                    </div>
+                    <br>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">If A = 1, B = 0 and Z = 1 what is the output if the logical expressions A + (B &
+                            Z) and Z & (~(A & B))
+                        </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q21" class="padded-o-div"><input type="radio" name="question2" value="q21"> A. 0, 1</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q22" class="padded-o-div"><input type="radio" name="question2" value="q22"> B. 1, 0</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q23" class="padded-o-div"><input type="radio" name="question2" value="q23"> C. 1, 1</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q24" class="padded-o-div"><input type="radio" name="question2" value="q24"> D. 0, 0</p>
+                    </div>
+                    <br>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">What of the following is true for OR gate ? </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q31" class="padded-o-div"><input type="radio" name="question3" value="q31"> A. The OR gate gives us a
+                            HIGH output if and
+                            only if both the inputs to the OR gate are HIGH.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q32" class="padded-o-div"><input type="radio" name="question3" value="q32"> B. The OR gate gives us a
+                            HIGH output if any of
+                            the input is HIGH.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q33" class="padded-o-div"><input type="radio" name="question3" value="q33"> C. The OR gate gives us a
+                            HIGH output if and
+                            only if both the inputs to the OR gate are LOW.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q34" class="padded-o-div"><input type="radio" name="question3" value="q34"> D. The OR gate gives us a
+                            HIGH output one input
+                            is HIGH and other is LOW.</p>
+                    </div>
+                    <br>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">What is the result of the following boolean expressions A & A, A + 1, A + 0 ? </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q41" class="padded-o-div"><input type="radio" name="question4" value="q41"> A. A, 1, 0</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q42" class="padded-o-div"><input type="radio" name="question4" value="q42"> B. 0, A, 1</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q43" class="padded-o-div"><input type="radio" name="question4" value="q43"> C. A, 1, A</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id="q44" class="padded-o-div"><input type="radio" name="question4" value="q44"> D. 1, 0, A</p>
+                    </div>
+                    <br>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">How many inputs are required for a NOT gate ? </p>
+                        <p style="margin-bottom: 2px;" id="q51" class="padded-o-div"><input type="radio" name="question5" value="q51"> A. 1</p>
+                        <p style="margin-bottom: 2px;" id="q52" class="padded-o-div"><input type="radio" name="question5" value="q52"> B. 2</p>
+                        <p style="margin-bottom: 2px;" id="q53" class="padded-o-div"><input type="radio" name="question5" value="q53"> C. 3</p>
+                        <p style="margin-bottom: 2px;" id="q54" class="padded-o-div"><input type="radio" name="question5" value="q54"> D. 4</p>
+                    </div>
+                    <br>
+                    <div class="padded-div">
+                        <input style="width: 200px;" class="submit-button" type="button" name="" value="SUBMIT" onclick="check()">
+            
+                    </div>
+                </form>
+                <div>
+                    <p class="padded-div" style="font-family: 'Raleway', sans-serif;" id="userscore"></p>
+                </div>
+            </section>
+            <!--3rd Slide-->
+            <section class="detail-content" id="section-66" style="padding: 20px 380px; color: rgb(255, 255, 255);">
+                <!-- <span class = "background" style="background-image:url('https://www.teahub.io/photos/full/257-2579448_wallpaper-gradient-blue-orange-linear-navy-dark-orange.jpg');"></span> -->
+                <div class="wrap">
+                    <h1 class="content-center font-family: 'Raleway', sans-serif;">Theory Involved</h1>
+                    <br><br>
+                    <h2 style="color: black; font-family: 'Raleway', sans-serif;">Logic Gates</h2>
+                    <p style="color: black; font-family: 'Raleway', sans-serif;">It is an electronic circuit having one or more than one input and only one
+                        output. The relationship between the input and the output is based on a certain logic. There are
+                        different kinds of logic gates. The project involved the following logic gates</p>
+                    <dl>
+                        <dt style="color: black; font-family: 'Raleway', sans-serif;">AND Gate</dt>
+                        <dd>
+                            <p style="color: black; font-family: 'Raleway', sans-serif;">The AND gate gives us a HIGH output if and only if all the inputs
+                                to the AND gate are HIGH. If even one of the inputs to the AND gate is LOW then the
+                                output will be LOW. The function can be extended to any number of inputs. The truth
+                                table and boolean expression are as follows:</p>
+                            <img src="assets/images/and_gate.png"
+                                style="width: 500px; display:block; margin-bottom: 20px; font-family: 'Raleway', sans-serif;" class="content-center">
+                            <table class="table">
+                                <thead class="thead-dark " style="text-align: center; font-family: 'Raleway', sans-serif;">
+                                    <tr>
+                                        <th scope="col" style="color: black; font-family: 'Raleway', sans-serif;">A</th>
+                                        <th scope="col" style="color: black; font-family: 'Raleway', sans-serif;">B</th>
+                                        <th scope="col" style="color: black; font-family: 'Raleway', sans-serif;">A.B</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3 class="content-center">Q = A.B</h3>
+                        </dd>
+                        <dt style="color: black; font-family: 'Raleway', sans-serif;">OR Gate</dt>
+                        <dd>
+                            <p style="color: black; font-family: 'Raleway', sans-serif;">The OR gate gives us a HIGH output if and only if at least one of
+                                the inputs to the OR gate is HIGH. If all the inputs to the OR gate are LOW then the
+                                output will be LOW. The function can be extended to any number of inputs. The truth
+                                table and boolean expression are as follows:</p>
+                            <img src="assets/images/or_gate.png"
+                                style="width: 500px; display:block; margin-bottom: 20px;" class="content-center">
+                            <h3 class="content-center">Q = A+B</h3>
+                        </dd>
+                        <dt style="color: black; font-family: 'Raleway', sans-serif;">NOT Gate</dt>
+                        <dd>
+                            <p style="color: black; font-family: 'Raleway', sans-serif;">The NOT gate gives us a HIGH output if and only if the input to the
+                                NOT gate is LOW. If the input to the NOT gate is HIGH then the output will be LOW. The
+                                function can be extended to any number of inputs. The truth table and boolean expression
+                                are as follows:</p>
+                            <img src="assets/images/not_gate.png"
+                                style="width: 500px; display:block; margin-bottom: 20px; " class="content-center">
+                            <table class="table">
+                                <thead class="thead-dark" style="text-align: center;">
+                                    <tr>
+                                        <th scope="col" style="color: black; font-family: 'Raleway', sans-serif;">A</th>
+                                        <th scope="col" style="color: black; font-family: 'Raleway', sans-serif;">NOT A</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">1</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td style="color: black; font-family: 'Raleway', sans-serif;">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3 class="content-center">Q = !A</h3>
+                        </dd>
+                        <dt style="color: black; font-family: 'Raleway', sans-serif;">Stuck at Faults</dt>
+                        <dd style="color: black; font-family: 'Raleway', sans-serif;">
+                            When a signal, or gate output, is stuck at a 0 or 1 value, independent of the inputs to the
+                            circuit, the signal is said to be “stuck at” and the fault model used to describe this type
+                            error is called a “stuck at fault model”.
+                            <br><br>
+                            Stuck at faults occur when a line is permanently stuck to Vdd or ground giving a faulty
+                            output. This line may be an input or output to any gate. Also this fault can be single or
+                            multiple stuck at faults.
+                            <br><br>
+                            <p style="color: black; font-family: 'Raleway', sans-serif;">A fault model is an engineering model of something that could go
+                                wrong in the construction or operation of a piece of equipment. From the model, the
+                                designer or user can then predict the consequences of this particular fault. Basic fault
+                                models in digital circuits include the stuck-at fault model, the bridging fault model,
+                                the transistor faults, the open fault model, the delay fault model, etc. If a circuit
+                                has n signal lines, there are potentially 2n stuck-at faults defined on the
+                                circuit.</p>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="detail-content" style="padding: 20px 380px;">
+                <div class="wrap">
+                    <h1 class="content-center">Our Approach</h1>
+                    <br><br>
+                    <dl>
+                        <dd>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">We used the Xilinx ISE Suite to create the simulation to test
+                                ‘stuck at’ faults in AND, OR and NOT gates. The entire simulation has been written in
+                                Verilog. Verilog is a hardware description language used to model electronic systems. It
+                                is most commonly used in the design and verification of digital circuits at the
+                                register-transfer level of abstraction.</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">We created a block of Verilog code that implemented the
+                                functionality to execute AND, OR and NOT operations for different inputs. We used
+                                built-in Verilog keywords and functions to do so. For example, for a 2 input AND gate,
+                                we declare three variables, _A, _B and _Z, and _Z is computed accordingly. The pseudo
+                                code looks something like this:
+                            <div class="content-center" style="text-align: left; font-family: monospace; font-family: 'Raleway', sans-serif;">
+                                reg _A;<br>
+                                reg _B;<br>
+                                reg _Z;<br>
+                                assign _Z = _A * _B;
+                            </div>
+                            </p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">The user can introduce faults in the gate and run simulations for
+                                all possible combinations using text fixtures. The ‘Fault Detection.xlsx’ file contains
+                                all the different possible inputs, faults and outputs.</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">Theoretically, for any gate, we have 2^(2^n) outputs, where n is
+                                the number of inputs. Let us take the example of a two input OR gate. We have 16
+                                different outputs for it, as shown in the Fault Detection file.</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">However, a lot of the output combinations are impossible to
+                                recreate irrespective of the input/fault combination.</p>
+                            <table class="table">
+                                <thead class="thead-dark" style="text-align: center;">
+                                    <tr>
+                                        <th scope="col" style="color : black; font-family: 'Raleway', sans-serif;">A</th>
+                                        <th scope="col" style="color : black; font-family: 'Raleway', sans-serif;">B</th>
+                                        <th scope="col" style="color : black; font-family: 'Raleway', sans-serif;">A+B</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td class="correct-cell">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td class="wrong-cell">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">0</td>
+                                        <td class="wrong-cell">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td style="color : black; font-family: 'Raleway', sans-serif;">1</td>
+                                        <td class="correct-cell">1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">In this case, to get output as 0 for the inputs 0 and 1, we must
+                                either have Sa0 at the output pin or Sa0 for the second input pin. However, it cannot be
+                                either of them as, for the same set of faults, it is not possible to get output as 1 for
+                                inputs 1 and 1. We can extend the same for the input set 1 and 0. This is a redundant
+                                case.</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">We can extend the same to the AND and NOT gate. For the valid
+                                output set, to denote presence of faults, we use ‘D’ to denote don’t care, ‘X’ for okay,
+                                ‘0’ for Sa0 and ‘1’ for Sa1. (A, B, Z) ⇔ (input1, input2, output).</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">We introduce faults in the simulation by using the force keyword.
+                                Like the name suggests, the forced value persists even if there is any subsequent
+                                attempt to change it. We declare two sets of variables: (A, B, Z), the actual inputs and
+                                output and (_A, _B, _Z), the expected inputs and output.</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">We then compare the actual and expected output for all possible
+                                combinations of A and B and if they are unequal, we can safely say that there is some
+                                fault in the gate.</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">Based on the inputs and difference between actual and expected
+                                outputs, we try to deduce what might be the possible faults that exist in the gate. Let
+                                us again take the example of a 2 input OR gate.</p>
+                            <table class="table">
+                                <thead class="thead-dark" style="text-align: center;">
+                                    <tr>
+                                        <th scope="col" style="color : black;">A</th>
+                                        <th scope="col" style="color : black;">B</th>
+                                        <th scope="col" style="color : black;">A+B</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="color : black;">0</td>
+                                        <td style="color : black;">0</td>
+                                        <td class="correct-cell">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color : black;">0</td>
+                                        <td style="color : black;">1</td>
+                                        <td class="wrong-cell">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color : black;">1</td>
+                                        <td style="color : black;">0</td>
+                                        <td class="wrong-cell">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="color : black;">1</td>
+                                        <td style="color : black;">1</td>
+                                        <td class="wrong-cell">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">In this case, the expected output for 0 1, 1 0 and 1 1 should have
+                                been 1, but the actual output comes out to be 0. So, either the output pin has a Sa0
+                                fault with possible faults in the input pins as well or both the input pins have Sa0
+                                faults with the output pin working properly. For different input/output sets, we can try
+                                to deduce the faults that might be present.</p>
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">The possible faults that can be determined for the gate are logged
+                                in the console of the Xilinx simulation using the '$display' function. We can extend the
+                                same logic to the AND and NOT gates.</p>
+                            <img src="assets/images/fault_detection.png"
+                                style="width: 500px; display:block; margin-bottom: 20px; border:3px solid black;"
+                                class="content-center">
+                            <p style="color : black; font-family: 'Raleway', sans-serif;">In the picture above it can be seen how the simulation predicted
+                                the faults which may be present in gate. It simulates the outputs for all possible
+                                combination of inputs and comparing it to the expected output, lists out the possible
+                                faults. For example, in this case, A had Sa0 fault and Z had Sa1 fault and the simulator
+                                rightly predicts "Atleast one of the lines is Sa1 and Z can't be Sa0"</p>
+                        </dd>
+                    </dl>
+                </div>
+            </section>
+            <section class="detail-content " style="padding: 20px 0px;">
+                <div class="wrap">
+                    <h1 style="color: black; font-size: 3.5pc; position: relative; top: -150px; text-align: center; font-family: 'Raleway', sans-serif;">Running the Simulation</h1>
+                    <hr style="height: 4px; position: relative; top: -150px; ">
+                    <!-- <h2>Procedure</h2> -->
+                    <ul style="position: relative; top: -150px; font-family: 'Raleway', sans-serif;">
+                        <li style="color: black; font-size: 1.5pc;">By default, the values of A and B are set to 0, the
+                            gate is set to AND and there are no faults present in any of the input/output lines.</li>
+                        <li style="color: black; font-size: 1.5pc;">The user must choose the gate, the input line values
+                            and the faults present. Then, click on the 'RUN' button.
+                        </li>
+                        <li style="color: black; font-size: 1.5pc;">If the output corresponding to the selected gate and
+                            inputs match with the expected output, the output is highlighted with a green background,
+                            else, it is displayed with a red background.</li>
+                        <li style="color: black; font-size: 1.5pc;">For one input NOT gate, the user can only select the
+                            input for A, B is not considered. Similarly, the user cannot introduce a fault in the input
+                            line for B.</li>
+                        <li style="color: black; font-size: 1.5pc;">The user can change the input dataset and again run
+                            the simulation. The previously computed output is stored until the page is refreshed, and
+                            hence can be used to compare different scenarios.</li>
+                    </ul>
+                </div>
+
+            </section>
+            <section style="color: white ; padding: 100px;">
+                <div class="inputs-outputs">
+                    <div>
+                        <h1><strong>Simulator</strong></h1>
+                        <h4><strong>Inputs:</strong></h4>
+                        <div class="gate-selector">
+                            <span>GATE:</span>
+                            <div class="radio-text"><input autocomplete="off" type="radio"
+                                    onclick="gate_radio_click(this)" id="GAND" name="G" checked>
+                                <label for="GAND">AND<label>
+                            </div>
+                            <div class="radio-text"> <input autocomplete="off" type="radio"
+                                    onclick="gate_radio_click(this)" id="GOR" name="G">
+                                <label for="GOR">OR</label>
+                            </div>
+                            <div class="radio-text"><input autocomplete="off" type="radio"
+                                    onclick="gate_radio_click(this)" id="GNOT" name="G">
+                                <label for="GNOT">NOT</label>
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="input-table">
+                            <div class="input-table-column">
+                                <span>A:</span>
+                                <div class="radio-text"><input type="radio" id="A0" name="A" checked> <label
+                                        for="A0">0</label></div>
+                                <div class="radio-text"><input type="radio" id="A1" name="A"> <label for="A1">1</label>
+                                </div>
+                            </div>
+                            <div class="input-table-column">
+                                <span>B:</span>
+                                <div class="radio-text"><input type="radio" id="B0" name="B" checked> <label
+                                        for="B0">0</label></div>
+                                <div class="radio-text"><input type="radio" id="B1" name="B"> <label for="B1">1</label>
+                                </div>
+                            </div>
+                            <div class="input-table-column">
+                                <span>Stuck at fault for A (S<sub>a</sub>):</span>
+                                <div class="radio-text"><input type="radio" id="Sa1" name="Sa"> <label
+                                        for="Sa1">1</label></div>
+                                <div class="radio-text"><input type="radio" id="Sa0" name="Sa"> <label
+                                        for="Sa0">0</label></div>
+                                <div class="radio-text"><input type="radio" id="SaN" name="Sa" checked> <label
+                                        for="SaN">No fault</label></div>
+                            </div>
+                            <div class="input-table-column">
+                                <span>Stuck at fault for B (S<sub>b</sub>):</span>
+                                <div class="radio-text"><input type="radio" id="Sb0" name="Sb"> <label
+                                        for="Sb0">0</label></div>
+                                <div class="radio-text"><input type="radio" id="Sb1" name="Sb"> <label
+                                        for="Sb1">1</label></div>
+                                <div class="radio-text"><input type="radio" id="SbN" name="Sb" checked> <label
+                                        for="SbN">No fault</label></div>
+                            </div>
+                            <div class="input-table-column  ">
+                                <span>Stuck at fault for Z (S<sub>z</sub>):</span>
+                                <div class="radio-text"><input type="radio" id="Sz1" name="Sz"> <label
+                                        for="Sz1">1</label></div>
+                                <div class="radio-text"><input type="radio" id="Sz0" name="Sz"> <label
+                                        for="Sz0">0</label></div>
+                                <div class="radio-text"><input type="radio" id="SzN" name="Sz" checked> <label
+                                        for="SzN">No fault</label></div>
+                            </div>
+                        </div>
+                        <div><button class="run-button" onclick="do_work()">Run</button></div>
+                    </div>
+                    <div class="output-table">
+                        <h4><strong>Output Table:</strong></h4>
+                        <table id="table" class="table">
+                            <tr class="d-flex" style="color: white;">
+                                <th class="col-4" style="color: white;">GATE</th>
+                                <th class="col-4">A</th>
+                                <th class="col-5">B</th>
+                                <th class="col-5">Expected output (Z<sub>e</sub>)</th>
+                                <th class="col-5">Z</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <form name="quiz1" id="quiz1">
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">What does Stuck at 0 fault mean ?  </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq11" class="padded-o-div"><input type="radio" name="pquestion1" value="pq11"> A. The input or output signal is stuck at a 0 or 1 value, independent of the inputs to the circuit.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq12" class="padded-o-div"><input type="radio" name="pquestion1" value="pq12"> B. Only the ouptut is is stuck at a 0 or 1 value, independent of the inputs to the circuit.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq13" class="padded-o-div"><input type="radio" name="pquestion1" value="pq13"> C. The the input or output signal will fail when it comes across 0.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq14" class="padded-o-div"><input type="radio" name="pquestion1" value="pq14"> D. The circuit isn't working</p>
+                    </div>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">If A = 1, B = 0 and Z = A & B. If the values of Z is 1, which of the situations are possible ?  </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq21" class="padded-o-div"><input type="radio" name="pquestion2" value="pq21" > A. A has SA1 Fault</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq22" class="padded-o-div"><input type="radio" name="pquestion2" value="pq22" > B. Z has SA1 Fault.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq23" class="padded-o-div"><input type="radio" name="pquestion2" value="pq23"> C. Z has SA0 Fault.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq24" class="padded-o-div"><input type="radio" name="pquestion2" value="pq24"> D. No Faults are present in the circuit.</p>
+                    </div>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">If A is stuck at 1 the what are the outputs for A + B for all the combinations of A and B ? </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq31" class="padded-o-div"><input type="radio" name="pquestion3" value="pq31"> A. 1, 1, 0, 1</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq32" class="padded-o-div"><input type="radio" name="pquestion3" value="pq32" > B. 1, 1, 1, 1.</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq33" class="padded-o-div"><input type="radio" name="pquestion3" value="pq33"> C. 0, 1, 0, 1</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq34" class="padded-o-div"><input type="radio" name="pquestion3" value="pq34"> D. 1, 1, 1, 0</p>
+                    </div>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">Which type of stuck at fault occurs when a line is stuck to the ground? </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq41" class="padded-o-div"><input type="radio" name="pquestion4" value="pq41" > A. Stuck at 0</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq42" class="padded-o-div"><input type="radio" name="pquestion4" value="pq42" > B. Stuck at 1</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq43" class="padded-o-div"><input type="radio" name="pquestion4" value="pq43"> C. Both A and B</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;" id = "pq44" class="padded-o-div"><input type="radio" name="pquestion4" value="pq44"> D. None of these</p>
+                    </div>
+                    <div class="padded-div">
+                        <p style="margin-bottom: 2px;" class="question-style">Which of the following faults are possible at B if result of A & B is always 0? </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq51" class="padded-o-div"><input type="radio" name="pquestion5" value="pq51"> A. Sa0</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq52" class="padded-o-div"><input type="radio" name="pquestion5" value="pq52" > B. Sa1</p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq53" class="padded-o-div"><input type="radio" name="pquestion5" value="pq53"> C. Both A and B </p>
+                        <p style="margin-bottom: 2px; font-size: 16px;"  id = "pq54" class="padded-o-div"><input type="radio" name="pquestion5" value="pq54"> D. No fault </p>
+                    </div>
+                    <div class="padded-div">
+                        <input style="width: 200px;" class="submit-button" type="button" name="" value="SUBMIT" onclick="check2()">
+                    </div>
+                    
+                </form>
+                <div>
+                    <p class="padded-div" style="font-family: 'Raleway', sans-serif;" id="p_userscore"></p>
+                </div>
+            </section>
+            <section class="detail-content  " id="section-66" style="padding: 0 380px;">
+                <span class="background"></span>
+                <div class="wrap">
+                    <div class="wrap aligncentertitleaim1" usedbyfluent="true" style="margin-top: 0%; vertical-align: top;">
+                        <h3 style="color: rgb(67, 141, 211); font-weight: bold; font-size: 2; font-family: 'Raleway', sans-serif;"
+                            usedbyfluent="true">References</h3>
+                    </div>
+                    <hr style="height: 4px; position: relative;
+                    top: -210px;">
+                    <h5 class="wrap aligncentertitleaim1" style="text-align: justify;  color: black; font-family: 'Raleway', sans-serif;">This experiment is developed by Dr. Biswajit R. Bhowmik and his UG students-
+                        Dibyam Kumar, Mehul Todi, Pratik Jallan, Sathvik Hebbar, and Shashank SM, Department of Computer Science and
+                          Engineering, National Institute of Technology Karnataka.</h5>
+                </div>
+            </section>
+
+            </section>
+        </article>
+    </main>
+    <script src="webslides.js"></script>
+    <script>
+        window.ws = new WebSlides();
+    </script>
+</body>
+
+</html>
